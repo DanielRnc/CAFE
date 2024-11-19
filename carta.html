@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café París II (Carta de precios)</title>
+    <style>
+        
+        body {
+            padding: 0 20px;
+            background-image: url('images/taza-cafe-tic-beat.jpg');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+       
+        h1 {
+            font-family: 'Parisienne', cursive;
+            font-size: 3em;
+            color: DarkGoldenRod;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+       
+        #eslogan {
+            font-family: 'Caveat', cursive;
+            font-style: italic;
+            font-size: 2em;
+            color: CornSilk;
+            border: 2px solid CornSilk;
+            width: 40%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+       
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            color: white;
+        }
+
+        ul li a {
+            font-family: 'Pacifico', cursive;
+            font-size: 1.5em;
+            color: white;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            font-weight: bold;
+        }
+
+        ul li a:active {
+            color: DarkGoldenRod;
+        }
+
+        
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border: 3px solid DarkGoldenRod;
+            border-collapse: collapse;
+            background-color: Cornsilk;
+            font-family: 'Satisfy', cursive;
+            font-size: 1.5em;
+            text-align: center;
+            color: black; 
+        }
+
+        th, td {
+            border: 3px solid DarkGoldenRod;
+            padding: 20px;
+            vertical-align: center;
+            color: black; 
+        }
+
+       
+        .categoria {
+            background-color: DarkGoldenRod;
+            font-size: 2em;
+            text-shadow: 3px 3px white;
+        }
+
+        
+        .fotocarta {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Café París II</h1>
+    <p id="eslogan">Un momento de relax</p>
+    <ul>
+        <li><a href="index.html">Principal</a></li>
+        <li><a href="carta.html">Nuestra Carta</a></li>
+        <li><a href="contacto.html">Contacte con nosotros</a></li>
+    </ul>
+
+    <h2>Nuestra Carta</h2>
+    <table>
+        <tr class="categoria">
+            <th colspan="3">Cafés</th>
+        </tr>
+        <tr>
+            <td>
+                <img src="images/capuchino.jpg" alt="Capuchino" class="fotocarta">
+                <p>Capuchino</p>
+            </td>
+            <td>
+                <img src="images/irlandes.jpg" alt="Irlandés" class="fotocarta">
+                <p>Irlandés</p>
+            </td>
+            <td>2.00€</td>
+        </tr>
+        <tr class="categoria">
+            <th colspan="3">Infusiones</th>
+        </tr>
+        <tr>
+            <td>
+                <img src="images/te-chai.jpg" alt="Té Chai" class="fotocarta">
+                <p>Té Chai</p>
+            </td>
+            <td>
+                <img src="images/te-negro.jpg" alt="Té Negro" class="fotocarta">
+                <p>Té Negro</p>
+            </td>
+            <td>1.50€</td>
+        </tr>
+    </table>
+</body>
+</html>

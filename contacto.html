@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café París III (Contacto)</title>
+    <style>
+        /* General */
+        body {
+            padding: 0 20px;
+            background-image: url('images/taza-cafe-tic-beat.jpg');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        /* H1 */
+        h1 {
+            font-family: 'Parisienne', cursive;
+            font-size: 3em;
+            color: DarkGoldenRod;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        /* Eslogan */
+        #eslogan {
+            font-family: 'Caveat', cursive;
+            font-style: italic;
+            font-size: 2em;
+            color: CornSilk;
+            border: 2px solid CornSilk;
+            width: 40%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Lista de navegación */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            color: white;
+        }
+
+        ul li a {
+            font-family: 'Pacifico', cursive;
+            font-size: 1.5em;
+            color: white;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            font-weight: bold;
+        }
+
+        ul li a:active {
+            color: DarkGoldenRod;
+        }
+
+        /* Formulario */
+        form {
+            border: 2px solid DarkGoldenRod;
+            border-radius: 20px;
+            width: 50%;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: black;
+        }
+
+        label {
+            font-family: 'Caveat', cursive;
+            color: CornSilk;
+            font-size: 1.5em;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="number"],
+        select {
+            display: block;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            width: 100%;
+            padding: 5px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        .radio-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .radio-group label {
+            margin-left: 5px;
+            font-size: 1.2em;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: DarkGoldenRod;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: goldenrod;
+        }
+
+        .checkbox-inline {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .checkbox-inline label {
+            margin-left: 5px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Café París III</h1>
+    <p id="eslogan">Un momento de relax</p>
+    <ul>
+        <li><a href="index.html">Principal</a></li>
+        <li><a href="carta.html">Nuestra Carta</a></li>
+        <li><a href="contacto.html">Contácte con nosotros</a></li>
+    </ul>
+
+    <h2>Contácte con Nosotros</h2>
+    <form action="procesacontacto.php" method="get">
+        <p>
+            <label for="nombre">Nombre y Apellidos:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre y apellidos" required>
+        </p>
+        <p>
+            <label for="fecha">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha" name="fecha" required>
+        </p>
+        <p>
+            <label>¿Qué suele consumir?</label>
+        </p>
+        <div class="radio-group">
+            <input type="radio" id="cafe" name="consumo" value="Café">
+            <label for="cafe">Café</label>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="te" name="consumo" value="Té">
+            <label for="te">Té</label>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="ambos" name="consumo" value="Ambos">
+            <label for="ambos">Ambos</label>
+        </div>
+        <p>
+            <label for="numero">Número de cafés al día:</label>
+            <input type="number" id="numero" name="numero" min="1" max="5">
+        </p>
+        <p>
+            <label for="cafeteria">Seleccione su cafetería:</label>
+            <select id="cafeteria" name="cafeteria">
+                <option value="Madrid" selected>Madrid</option>
+                <option value="Barcelona">Barcelona</option>
+                <option value="Sevilla">Sevilla</option>
+            </select>
+        </p>
+        <div class="checkbox-inline">
+            <input type="checkbox" id="ofertas" name="ofertas" checked>
+            <label for="ofertas">Deseo recibir información sobre novedades y ofertas</label>
+        </div>
+        <button type="submit">Enviar</button>
+        <button type="reset">Reiniciar</button>
+    </form>
+</body>
+</html>
